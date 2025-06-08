@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Portfolio</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Music Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <section id="audio-samples">
+        <h2>Audio Samples</h2>
+        
+        <!-- SoundCloud Audio -->
+        <div class="audio-item">
+            <h3>Track from SoundCloud</h3>
+            <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" 
+                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/YOUR_TRACK_ID&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+            </iframe>
+            <p>Description of your SoundCloud track</p>
+        </div>
+
+        <!-- Spotify Audio -->
+        <div class="audio-item">
+            <h3>Track from Spotify</h3>
+            <iframe style="border-radius:12px" 
+                src="https://open.spotify.com/embed/track/YOUR_SPOTIFY_TRACK_ID?utm_source=generator" 
+                width="100%" height="152" frameBorder="0" allowfullscreen="" 
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+            </iframe>
+            <p>Description of your Spotify track</p>
+        </div>
+
+        <!-- YouTube Audio -->
+        <div class="audio-item">
+            <h3>Track from YouTube</h3>
+            <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+            </iframe>
+            <p>Description of your YouTube track</p>
+        </div>
+
+        <!-- Google Drive Audio -->
+        <div class="audio-item">
+            <h3>Track from Google Drive</h3>
+            <audio controls>
+                <source src="https://drive.google.com/uc?export=download&id=YOUR_GOOGLE_DRIVE_FILE_ID" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <p>Description of your Google Drive track</p>
+        </div>
+
+        <!-- Dropbox Audio -->
+        <div class="audio-item">
+            <h3>Track from Dropbox</h3>
+            <audio controls>
+                <source src="https://dl.dropboxusercontent.com/s/YOUR_DROPBOX_LINK/track.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <p>Description of your Dropbox track</p>
+        </div>
+
+    </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Producer Name. All rights reserved.</p>
+    </footer>
+    <script src="../js/app.js"></script>
+</body>
+</html>

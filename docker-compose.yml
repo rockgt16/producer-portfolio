@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  producer-portfolio:
+    image: nginx:alpine
+    container_name: producer_portfolio
+    restart: unless-stopped
+    ports:
+      - "3000:80"
+    volumes:
+      - .:/usr/share/nginx/html:ro
+    networks:
+      - portfolio_network
+
+networks:
+  portfolio_network:
+    driver: bridge
